@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy : Jira Ticket Bookmark Manager</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a2332;
+      background: #f7f8fa;
+      padding: 48px 16px 80px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 48px 56px;
+      box-shadow: 0 1px 3px rgba(20, 38, 57, 0.07), 0 4px 16px rgba(20, 38, 57, 0.06);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4f5fde;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0d1b2a;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .meta {
+      font-size: 13.5px;
+      color: #6b7a8d;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 650;
+      color: #0d1b2a;
+      margin-top: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #3a4a5c;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: #3a4a5c;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border-left: 3px solid #22c55e;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      color: #166534;
+      font-size: 15px;
+    }
+
+    a {
+      color: #4f5fde;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e8ecf0;
+      margin: 40px 0;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #8a96a3;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 32px 24px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Chrome Extension</span>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Jira Ticket Bookmark Manager &mdash; Last updated: July 1, 2025</p>
+
+    <div class="highlight">
+      <strong>Short version:</strong> This extension stores your bookmarks locally on your device only. No data is ever sent to any external server, analytics service, or third party.
+    </div>
+
+    <h2>1. What data we access</h2>
+    <p>The extension accesses the following data solely to provide its core functionality:</p>
+    <ul>
+      <li><strong>Jira ticket metadata</strong> : ticket key, title, status, priority, and assignee. This is fetched directly from your own Atlassian Jira instance using your existing browser session (no additional credentials are stored or requested).</li>
+      <li><strong>Personal notes</strong> : optional short notes you choose to attach to individual bookmarks.</li>
+      <li><strong>Extension settings</strong> : folder organization preferences, theme, retention rules, and display options.</li>
+    </ul>
+
+    <h2>2. How data is stored</h2>
+    <p>All data is stored exclusively in <strong>Chrome's local storage API</strong> (<code>chrome.storage.local</code>), which keeps data on your device only. Data never leaves your browser.</p>
+    <ul>
+      <li>No cloud sync.</li>
+      <li>No external database.</li>
+      <li>No third party storage service.</li>
+    </ul>
+
+    <h2>3. Data we do NOT collect</h2>
+    <p>We do not collect, transmit, or share:</p>
+    <ul>
+      <li>Personal identity information (name, email, account credentials)</li>
+      <li>Browsing history or activity outside of your Jira instance</li>
+      <li>Analytics, telemetry, or usage statistics</li>
+      <li>Crash reports or error logs</li>
+      <li>Any data from websites other than your configured Jira site</li>
+    </ul>
+
+    <h2>4. Network requests</h2>
+    <p>The extension makes network requests exclusively to your own Atlassian Jira domain (the one you configure during setup) to fetch ticket information. These requests use your browser's existing authenticated session. No requests are made to any other domain.</p>
+
+    <h2>5. Permissions explained</h2>
+    <ul>
+      <li><strong>storage</strong> : to save your bookmarks and settings locally on your device.</li>
+      <li><strong>alarms</strong> : to schedule automatic expiry checks for temporary folders (runs locally, no network activity).</li>
+      <li><strong>Host permission for your Jira domain</strong> : to fetch ticket details from your Atlassian instance. The domain is configured by you and restricted to exactly that origin.</li>
+    </ul>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>Your data persists in Chrome local storage until you:</p>
+    <ul>
+      <li>Manually delete individual bookmarks or folders within the extension.</li>
+      <li>Uninstall the extension (Chrome removes all associated storage automatically).</li>
+      <li>Clear your browser's extension storage via Chrome settings.</li>
+    </ul>
+    <p>Temporary folders have configurable auto expiry and delete their contents automatically based on your settings.</p>
+
+    <h2>7. Third party services</h2>
+    <p>This extension does not integrate with, send data to, or load code from any third party service, analytics platform, or advertising network.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>This extension is a professional productivity tool intended for use with workplace Jira accounts. It is not directed at children under 13 and does not knowingly collect any information from children.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published at this URL with a revised date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <hr />
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue on the extension's repository or contact the developer directly.</p>
+
+    <p class="footer">
+      &copy; 2025 Jira Ticket Bookmark Manager. This is an independent tool and is not affiliated with or endorsed by Atlassian.
+    </p>
+  </div>
+</body>
+</html>
