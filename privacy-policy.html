@@ -116,7 +116,7 @@
   <div class="container">
     <span class="badge">Chrome Extension</span>
     <h1>Privacy Policy</h1>
-    <p class="meta">Jira Ticket Bookmark Manager ( Last updated: July 1, 2025 )</p>
+    <p class="meta">Jira Ticket Bookmark Manager &mdash; Last updated: July 1, 2026</p>
 
     <div class="highlight">
       <strong>Short version:</strong> This extension stores your bookmarks locally on your device only. No data is ever sent to any external server, analytics service, or third party.
@@ -145,17 +145,17 @@
       <li>Browsing history or activity outside of your Jira instance</li>
       <li>Analytics, telemetry, or usage statistics</li>
       <li>Crash reports or error logs</li>
-      <li>Any data from websites other than your configured Jira site</li>
+      <li>Any data from websites other than Atlassian Jira Cloud sites (<code>*.atlassian.net</code>)</li>
     </ul>
 
     <h2>4. Network requests</h2>
-    <p>The extension makes network requests exclusively to your own Atlassian Jira domain (the one you configure during setup) to fetch ticket information. These requests use your browser's existing authenticated session. No requests are made to any other domain.</p>
+    <p>The extension makes network requests exclusively to Atlassian Jira Cloud sites (<code>*.atlassian.net</code>) to fetch ticket information for the tickets you bookmark. These requests use your browser's existing authenticated session. No requests are made to any other domain, and this restriction is enforced in the extension's own code, not just by browser permissions.</p>
 
     <h2>5. Permissions explained</h2>
     <ul>
       <li><strong>storage</strong> : to save your bookmarks and settings locally on your device.</li>
       <li><strong>alarms</strong> : to schedule automatic expiry checks for temporary folders (runs locally, no network activity).</li>
-      <li><strong>Host permission for your Jira domain</strong> : to fetch ticket details from your Atlassian instance. The domain is configured by you and restricted to exactly that origin.</li>
+      <li><strong>Host access to <code>*.atlassian.net</code></strong> : to fetch ticket details from whichever Atlassian Jira Cloud site you are using. Access is limited to Atlassian Jira Cloud domains only; the extension never requests access to any other website.</li>
     </ul>
 
     <h2>6. Data retention and deletion</h2>
@@ -182,7 +182,7 @@
     <p>If you have questions about this privacy policy, please open an issue on the extension's repository or contact the developer directly.</p>
 
     <p class="footer">
-      &copy; 2025 Jira Ticket Bookmark Manager. This is an independent tool and is not affiliated with or endorsed by Atlassian.
+      &copy; 2026 Jira Ticket Bookmark Manager. This is an independent tool and is not affiliated with or endorsed by Atlassian.
     </p>
   </div>
 </body>
